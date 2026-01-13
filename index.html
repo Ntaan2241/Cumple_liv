@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Felices 25! 🎉</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <div id="cover-screen">
+            <div class="gift-icon">🎁</div>
+            <h1 class="cover-title">Para Ti</h1>
+            <p class="cover-subtitle">Tienes una sorpresa pendiente</p>
+            <button class="btn-abrir" id="btnAbrir">✨ ABRIR CARTA ✨</button>
+            <p class="small-text">(Sube el volumen 🔊)</p>
+        </div>
+
+        <header class="header">
+            <h2>¡Feliz Cumpleaños! 🎂</h2>
+        </header>
+
+        <main class="main-content">
+            
+            <section id="tab-inicio" class="tab active">
+                <div class="photo-frame">
+                    <img src="Portada.jpg" alt="Portada" onerror="this.src='https://placehold.co/400x300?text=Error+Portada.jpg'">
+                </div>
+                
+                <h2 class="section-title">¡Bienvenida al Nivel 25!</h2>
+                
+                <div class="message-card">
+                    <p>"Holaap, bienvenida a los 25, ya es un cuarto de siglo, así que cuidado con los dolores de espalda jaja."</p>
+                </div>
+
+                <div class="chicken-alert">
+                    <span class="chicken-icon">🐔</span>
+                    <div class="chicken-text">
+                        <strong>ADVERTENCIA:</strong><br>
+                        "Cuídate y pásala bonito eh, sino te agarrará a picotazos."<br>
+                        <span class="chicken-sign">— Atte, la gallina jaja</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-carta" class="tab">
+                <h3 class="section-header">📜 Dedicatoria</h3>
+                <div class="message-card paper-texture">
+                    <p>Hablando en serio, quería decirte que valoro mucho nuestra amistad. Eres una persona muy auténtica.</p>
+                    <p>Desde el momento que te conocí lit conectamos muy rápido ⚡, de esa gente que ya casi no se encuentra (y menos en un juego).</p>
+                    <div class="divider"></div>
+                    <p>Quiero que sepas que eres especial y no dejes que nadie diga lo contrario.</p>
+                    <p>A pesar que dejemos de hablar días o meses, siempre tendrás aquí un amigo en quien confiar.</p>
+                    <p class="highlight-text">¡Pasala bonito amiguita! D:</p>
+                </div>
+            </section>
+
+            <section id="tab-galeria" class="tab">
+                <h3 class="section-header">📸 Nuestro Álbum</h3>
+                <p class="subtitle-text">Recuerdos desbloqueados</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="foto1.jpg" onerror="this.src='https://placehold.co/150?text=Error+foto1.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="foto2.jpg" onerror="this.src='https://placehold.co/150?text=Error+foto2.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="foto3.jpg" onerror="this.src='https://placehold.co/150?text=Error+foto3.jpg'">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="foto4.jpg" onerror="this.src='https://placehold.co/150?text=Error+foto4.jpg'">
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-story" class="tab">
+                <h3 class="section-header">📅 Momentos</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🎮</div>
+                        <div class="timeline-content">
+                            <strong>El Inicio</strong>
+                            <p>Cuando coincidimos en el juego y conectamos al toque.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">😂</div>
+                        <div class="timeline-content">
+                            <strong>Las Risas</strong>
+                            <p>Esas charlas random que arreglan cualquier día malo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🎂</div>
+                        <div class="timeline-content">
+                            <strong>Nivel 25</strong>
+                            <p>Hoy celebramos que eres una crack. ¡Y lo que falta!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <nav class="nav-bar">
+            <button class="nav-btn active" data-target="tab-inicio">
+                <span class="icon">🏠</span>Inicio
+            </button>
+            <button class="nav-btn" data-target="tab-carta">
+                <span class="icon">💌</span>Carta
+            </button>
+            <button class="nav-btn" data-target="tab-galeria">
+                <span class="icon">📸</span>Album
+            </button>
+            <button class="nav-btn" data-target="tab-story">
+                <span class="icon">📅</span>Story
+            </button>
+        </nav>
+
+    </div>
+
+    <audio id="audioPlayer" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
